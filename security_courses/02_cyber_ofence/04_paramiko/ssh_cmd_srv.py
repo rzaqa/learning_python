@@ -47,7 +47,7 @@ def listener():
     # New socket
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    sock.bind(("", "2222")) # Listening port
+    sock.bind(("", 2222)) # Listening port
 
     print("Listening")
     sock.listen(1)
