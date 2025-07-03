@@ -1,5 +1,9 @@
 def checkio(words: str) -> bool:
-    # add your code here
+    counter = 0
+    for word in words.split():
+        counter = counter + 1 if word.isalpha() else 0
+        if counter == 3:
+            return True
     return False
 
 
